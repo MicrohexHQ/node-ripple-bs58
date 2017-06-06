@@ -1,17 +1,16 @@
 {
-  "name": "bs58",
+  "name": "ripple-bs58",
   "version": "4.0.1",
   "description": "Base 58 encoding / decoding",
   "keywords": [
     "base58",
-    "bitcoin",
+    "ripple",
     "crypto",
     "crytography",
     "decode",
     "decoding",
     "encode",
-    "encoding",
-    "litecoin"
+    "encoding"
   ],
   "license": "MIT",
   "devDependencies": {
@@ -19,7 +18,7 @@
     "tape": "^4.6.3"
   },
   "repository": {
-    "url": "https://github.com/cryptocoinjs/bs58",
+    "url": "https://github.com/you21979/ripple-bs58",
     "type": "git"
   },
   "files": [
