@@ -1,17 +1,17 @@
-bs58
+ripple-bs58
 ====
 
-[![build status](https://travis-ci.org/cryptocoinjs/bs58.svg)](https://travis-ci.org/cryptocoinjs/bs58)
+[![build status](https://travis-ci.org/cryptocoinjs/ripple-bs58.svg)](https://travis-ci.org/cryptocoinjs/ripple-bs58)
 
 JavaScript component to compute base 58 encoding. This encoding is typically used for crypto currencies such as Bitcoin.
 
-**Note:** If you're looking for **base 58 check** encoding, see: [https://github.com/bitcoinjs/bs58check](https://github.com/bitcoinjs/bs58check), which depends upon this library.
+**Note:** If you're looking for **base 58 check** encoding, see: [https://github.com/bitcoinjs/ripple-bs58check](https://github.com/bitcoinjs/ripple-bs58check), which depends upon this library.
 
 
 Install
 -------
 
-    npm i --save bs58
+    npm i --save ripple-bs58
 
 
 API
@@ -24,12 +24,12 @@ API
 **example**:
 
 ```js
-const bs58 = require('bs58')
+const bs58 = require('ripple-bs58')
 
 const bytes = Buffer.from('003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187', 'hex')
 const address = bs58.encode(bytes)
 console.log(address)
-// => 16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS
+// => ra7jcY4BG9GTKhuqpCfyYNbu5CqUzoLMGS
 ```
 
 
@@ -40,11 +40,11 @@ console.log(address)
 **example**:
 
 ```js
-const bs58 = require('bs58')
+const bs58 = require('ripple-bs58')
 
-const address = '16UjcYNBG9GTK4uq2f7yYEbuifqCzoLMGS'
-const bytes = bs58.decode(address)
-console.log(out.toString('hex'))
+const address = 'ra7jcY4BG9GTKhuqpCfyYNbu5CqUzoLMGS'
+const bytes = new Buffer(bs58.decode(address))
+console.log(bytes.toString('hex'))
 // => 003c176e659bea0f29a3e9bf7880c112b1b31b4dc826268187
 ```
 
