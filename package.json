@@ -18,7 +18,7 @@
     "tape": "^4.6.3"
   },
   "repository": {
-    "url": "https://github.com/you21979/ripple-bs58",
+    "url": "https://github.com/you21979/node-ripple-bs58",
     "type": "git"
   },
   "files": [
